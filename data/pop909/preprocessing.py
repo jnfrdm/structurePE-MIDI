@@ -9,9 +9,12 @@ import numpy as np
 import pandas as pd
 import torch
 from mido import MidiFile
+import sys
+ 
+# adding sctructure_pe folder to the system path
+sys.path.insert(0, 'C:/Users/John/Desktop/POLIMI/SECOND YEAR/GitHub Desktop Repositories/structurePE/src/structure_pe')
 
-from structure_pe.datasets import LABELS, LETTERS
-
+from datasets import LABELS, LETTERS
 
 def main():
     parser = argparse.ArgumentParser()
@@ -20,8 +23,8 @@ def main():
     args = parser.parse_args()
 
     # # # # # Change the following paths ! # # # # #
-    dir_ = Path("/home/magarwal/repos/POP909-Dataset/POP909/")  # work
-    struct_dir_ = Path("/home/magarwal/repos/hierarchical-structure-analysis/POP909/")  # work
+    dir_ = Path("C:/Users/John/Desktop/POLIMI/ALTRO/ERASMUS/Internship/Datasets/POP909-Dataset-master/POP909-Dataset-master/POP909")  # work
+    struct_dir_ = Path("C:/Users/John/Desktop/POLIMI/ALTRO/ERASMUS/Internship/Datasets/hierarchical-structure-analysis-main/hierarchical-structure-analysis-main/POP909")  # work
 
     out_ = Path("./data")
 

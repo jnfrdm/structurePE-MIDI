@@ -41,7 +41,7 @@ def main():
 
     neptune_run = neptune.init_run(
         # change this to your project
-        # project = "username/project",
+        project='jnfrdm/StructuredPE'
         name = args.name or args.model_dir,
         # mode="debug",
         source_files = []
